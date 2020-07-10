@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='designs_entrance.css')}}">
+    <title>  <h1> <b> Entrance </b></h1>  </title>
+</head>
+<body>
+    <header>
+        <h2> Welcome To Challange </h2>
+    </header>
+
+<div id="cont">  
+  
+      <h3>  You have account or You want to creat an account ?  </h3>
+
+<form action="/entrance" method="post" enctype="multipart/form-data">
+  <label for="options">Choose a option:</label>
+  <select name="options" id="options">
+    <option value="Login">Login</option>
+    <option value="SignUp">SignUp</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Select">
+</form>
+   </div>
+</body>
+</html>
+

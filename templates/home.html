@@ -1,0 +1,58 @@
+{%extends 'base.html' %}
+{%block title%} {{Username}}-Python Challange {%endblock%}
+{% if Username %}
+{%block header %}
+<h1><b>{{Username}} Welcome to Python Challange </b></h1> 
+{%endblock%}
+{% endif %}
+{%block content%}
+    <h2>  Solve given problem regarding notations  </h2> 
+<div class="myDiv">
+<p>  <b>Problem:</b><br><br>
+Ben is a milkman. He is responsible to take and selling the milk portion of some houses in a region of Newyork city. Every morning he should visit the number of houses. But he has a problem. He does not know how to manage his path to houses and arrange houses to visit.
+He wants to have totally shortest path. With respecting these conditions:</p>
+<ul><li>He wants to visit all houses. Also, he does not like backing again to previously visited houses. Of course, at the end, he wants to go back to the starting house, because the starting house is his neighbor.</li>
+<li>He knows the starting house and the position of each house.</li></ul>
+Help Ben to Find an optimum path. 
+<br><br>
+ <b>Details:</b><br><br>
+For implementation use 'TSP' class:
+<br><br>
+<b>TSP class:</b><br><br>
+Each member of this class has 3 attributes. They will initialize in  __init__ function.<br>
+<ol><li><i>start </i>: Shows the index of startting house.</li><br>
+<li><i>position </i>: Which is a dictionary type. Keys are indexes assigned to each house. The values of each key are the position of that house in a coordinate plane. The type of values is 'tuple'. like this one{1:(x,y)}.</li><br>
+<li><i>vertex_num </i>: Shows the number of houses which should be visited. Is not as an input argument for '__init__'. You can use the 'position' input to value this attribute.</li><br>
+</ol>
+<br><b>
+this class has 4 methods:</b>
+<ol><li><i>calc_distance </i>: This attribute gets two houses indexes as an input and returns euclidean distance of two houses.
+<br><br>
+<li><i>sequence </i>: When we call this method(without input) it will return a set which includes all sequences which are possible to arrange houses. Sequences are tuple type, which first element is the index of the starting house and the next elements show intermediate houses to visit and the last element is the same as the starting house. like this: {(1,..,1),(1,..,1),..}</li>
+<br>
+<b>notations: </b><br><br>
+Note that this problem is an NP-hard problem. So in large spaces, it is not easy to solve with this solution and we will need stochastic solutions. In this case, we consider small space to our problem, therefore, we can calculate the number of possible solutions or sequences. '(vertex_num-1)!' is the number of all possible sequences.</li><br><br>
+<li><i>seq_distance </i>: This attribute gets a sequence with tuple type and returns the total distance between houses mentioned in sequence from starting one to ending one.</li>
+<br>
+<li><i>find_min </i>: This attribute gets a set of tuple sequences and selects a solution with less path distance. And returns minimum length of distance and the path related respectively. </li>
+</ol><br>
+<b>tips:</b>
+Name your file 'tspp.py'
+</div>
+<div class='fo'>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        Select your File to Upoad:
+        <input type="file" name="uploadedData">
+        <input type="submit" value="upload">
+    </form>
+{% if Message %}
+<br>{{Message}}
+{%endif%}
+
+{%endblock%}
+</div>
+{%block end%}
+<hr><h5>writen by : Zahra Aghapour<br>
+Email : z_aghapour@aut.ac.ir<br>
+Python Learning Course</h5><br>
+{%endblock%}

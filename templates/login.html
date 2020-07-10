@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='designs_entrance.css')}}">
+    <title>  <h1> <b> Entrance </b></h1>  </title>
+</head>
+<body>
+    <header>
+        <h3> Login Page </h3>
+    </header>
+
+<body>
+<div id="cont">
+    <h3>Enter Username and Password</h3>
+    <form action="/login" method="POST">
+        <label for="user">Username</label>
+        <input type="text" name="user"><br>
+        <label for="pass">Password</label>
+        <input type="text" name="pass"><br><br>
+        <input type="submit" value="Send">
+    </form>
+
+
+{% if message %}
+        <h4>Message : {{message}}</h4>
+    {% endif %}
+   </div>
+</body>
+</html>
+
+
