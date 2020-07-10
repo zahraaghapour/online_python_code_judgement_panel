@@ -1,0 +1,32 @@
+h2{
+    color: rgb(22, 72, 105);
+    text-align: center;
+    text-shadow: #c9bcd4;
+    font-family: 'Times New Roman', Times, serifs;
+    font-size: 32pt;
+    font-weight: bold;
+  }
+header{
+    background-size: 480pt;
+    padding: 100px;
+    background-color: rgb(228, 228, 235);  
+    border-bottom-style: solid;
+    border-bottom-color: rgb(180, 186, 192);
+    background-position-y: 340pt;
+    background-position-x: center;
+    margin-top: -6pt;
+}
+
+h3{
+    color: rgb(16, 66, 99);
+    text-align: center;
+    text-shadow: #c9bcd4;
+    font-family: 'Times New Roman', Times, serifs;
+    font-size: 22pt;
+    font-weight: bold;
+  }
+#cont{
+    text-align: center;
+    padding-top: 3%;
+  }
+
