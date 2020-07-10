@@ -39,9 +39,9 @@ class Test_all(unittest.TestCase):
             seq=list(seq)
             count=len(self.positions)
             for i in seq:
-                self.assertEqual(len(i),count+1,' ** Some cities visited more than one time!  **')
-                self.assertSetEqual(set(i), set(self.positions.keys()), ' ** sequences do not contain all cities!  **')
-            print(' ** sequences containning all cities is OK  ** \n\n ** All cities visited one time is OK  **')
+                self.assertEqual(len(i),count+1,' ** Some houses visited more than one time!  **')
+                self.assertSetEqual(set(i), set(self.positions.keys()), ' ** sequences do not contain all houses!  **')
+            print(' ** sequences containning all houses is OK  ** \n\n ** All houses visited one time is OK  **')
 
 
     def test_seq_distance(self):
