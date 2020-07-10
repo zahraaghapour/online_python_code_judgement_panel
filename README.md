@@ -1,7 +1,7 @@
 # online_python_code_judgement_panel
 
 This program is a python code judgement based on Flask. 
-**test_tsp.py** file is a test file according to unittest, which is written for a designed challange(you will face with the considered challange through running the programm)
+**test_tsp.py** file is a test file according to unittest, which is written for a designed challange (you will face with the considered challange through running the programm)
 
 ## How to Run :
 
