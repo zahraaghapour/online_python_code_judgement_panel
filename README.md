@@ -8,7 +8,7 @@ This program is a python code judgement based on Flask.
 - git clone https://github.com/zahraaghapour/online_python_code_judgement_panel.git
 - cd online_python_code_judgement_panel
 - pip install virtualenv
-- python -m venv [your environment name]
+- python3 -m venv [your environment name]
 - source  [your environment name]/bin/activate
 - pip install -r requirements.txt
 - python main.py
